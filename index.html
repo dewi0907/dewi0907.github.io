@@ -3,231 +3,712 @@
 
 <head>
     <meta charset="utf-8">
-    <title>FreeFolio - Freelancer Portfolio Template</title>
+    <title>Tugas IMK_Dewi Kartika</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
+    <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
-    <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-        <a href="index.html" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">Free</span>Folio</h1>
-        </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-            <div class="navbar-nav m-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#qualification" class="nav-item nav-link">Quality</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
+<body>
+
+<!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand d-inline-flex" href="index.html"><img class="d-inline-block" src="img/logo-removebg-preview (2).png" alt="logo" style="width: 44px; height:44px;"/><span class="text-1000 fs-3 fw-bold ms-2 text-gradient">Donuts</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 my-2 mt-lg-0" id="navbarSupportedContent">
+            <div class="mx-auto pt-5 pt-lg-0 d-block d-lg-none d-xl-block">
+              <p class="mb-0 fw-bold text-lg-center">Deliver to: <i class="fas fa-map-marker-alt text-warning mx-2"></i><span class="fw-normal">Current Location </span><span>123 Street, New York, USA</span></p>
             </div>
+            <form class="d-flex mt-4 mt-lg-0 ms-lg-auto ms-xl-0">
+              <div class="input-group-icon pe-2"><i class="fas fa-search input-box-icon text-primary"></i>
+                <input class="form-control border-0 input-box bg-100" type="search" placeholder="Search Food" aria-label="Search" />
+              </div>
+              <button class="btn btn-white shadow-warning text-warning" type="submit"> <i class="fas fa-user me-2"></i>Login</button>
+            </form>
+          </div>
         </div>
-    </nav>
-    <!-- Navbar End -->
-
-
-    <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>        
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Video Modal End -->
-
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+      </nav>
+      <section class="py-5 overflow-hidden bg-primary" id="home">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/wp.jfif" alt="">
+          <div class="row flex-center">
+            <div class="col-md-5 col-lg-6 order-0 order-md-1 mt-8 mt-md-0"><a class="img-landing-banner" href="#!"><img class="img-fluid" src="img/Chocolate_Donut_with_Sprinkles_II-removebg-preview.png" alt="hero-header" /></a></div>
+            <div class="col-md-7 col-lg-6 py-8 text-md-start text-center">
+              <h2 class="display-2 fs-md-6 fs-lg-7 fs-xl-9 text-light">Enjoy Our<br>Delicious Donuts</h2>
+              <h4 class="text-1000 mb-5 fs-4">Whether it's rainy or hot season,<br class="d-none d-xxl-block" /> donuts are suitable as a friend to relax at home.</h4>
+              <div class="card w-xxl-75">
+                <div class="card-body">
+                  <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <button class="nav-link active mb-3" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fas fa-motorcycle me-2"></i>Delivery</button>
+                      <button class="nav-link mb-3" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fas fa-shopping-bag me-2"></i>Pickup</button>
+                    </div>
+                  </nav>
+                  <div class="tab-content mt-3" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                      <form class="row gx-2 gy-2 align-items-center">
+                        <div class="col">
+                          <div class="input-group-icon"><i class="fas fa-map-marker-alt text-danger input-box-icon"></i>
+                            <label class="visually-hidden" for="inputDelivery">Address</label>
+                            <input class="form-control input-box form-foodwagon-control" id="inputDelivery" type="text" placeholder="Enter Your Address" />
+                          </div>
+                        </div>
+                        <div class="d-grid gap-3 col-sm-auto">
+                          <button class="btn btn-danger" type="submit">Find Food</button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                      <form class="row gx-4 gy-2 align-items-center">
+                        <div class="col">
+                          <div class="input-group-icon"><i class="fas fa-map-marker-alt text-danger input-box-icon"></i>
+                            <label class="visually-hidden" for="inputPickup">Address</label>
+                            <input class="form-control input-box form-foodwagon-control" id="inputPickup" type="text" placeholder="Enter Your Address" />
+                          </div>
+                        </div>
+                        <div class="d-grid gap-3 col-sm-auto">
+                          <button class="btn btn-danger" type="submit">Find Food</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Dewi Kartika</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none">Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer</div>
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <button type="button" class="btn-play" data-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
-                            <span></span>
-                        </button>
-                        <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Play Video</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+<!-- ============================================-->
+      <!-- <section> begin ============================-->
+        <section class="py-0 bg-primary-gradient">
+
+          <div class="container">
+            <div class="row justify-content-center g-0">
+              <div class="col-xl-9">
+                <div class="col-lg-6 text-center mx-auto mb-3 mb-md-5 mt-4">
+                  <h5 class="fw-bold text-danger fs-3 fs-lg-5 lh-sm my-6">How does it work</h5>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 col-md-3 mb-6">
+                    <div class="text-center"><img class="shadow-icon" src="assets/img/gallery/location.png" height="112" alt="..." />
+                      <h5 class="mt-4 fw-bold">Select location</h5>
+                      <p class="mb-md-0">Choose the location where your food will be delivered.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 mb-6">
+                    <div class="text-center"><img class="shadow-icon" src="assets/img/gallery/order.png" height="112" alt="..." />
+                      <h5 class="mt-4 fw-bold">Choose order</h5>
+                      <p class="mb-md-0">Check over hundreds of menus to pick your favorite food</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 mb-6">
+                    <div class="text-center"><img class="shadow-icon" src="assets/img/gallery/pay.png" height="112" alt="..." />
+                      <h5 class="mt-4 fw-bold">Pay advanced</h5>
+                      <p class="mb-md-0">It's quick, safe, and simple. Select several methods of payment</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 mb-6">
+                    <div class="text-center"><img class="shadow-icon" src="assets/img/gallery/meals.png" height="112" alt="..." />
+                      <h5 class="mt-4 fw-bold">Enjoy meals</h5>
+                      <p class="mb-md-0">Food is made and delivered directly to your home.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- end of .container-->
+  
+        </section>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+       
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/donuts (9 (1).png">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/B_Donuts.jfif" style="margin-top: 25%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/Donuts.jfif">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/donuts (9 (3).jfif">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
+                        <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>Donuts</h1>
+                        <p class="mb-4">What’s your mood? We’ve got exceptionally handcrafted donuts, premium sourced Arabica coffee, and other crave-inducing treats prepared just for you.</p>
+                        <p class="mb-4">World’s Best Donuts & Coffee Order your favorite anywhere with our App! Link down below</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Years of</p>
+                                        <h6 class="text-uppercase mb-0">Experience</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Popular</p>
+                                        <h6 class="text-uppercase mb-0">Donuts</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary py-3 px-5 mt-2" href="">ORDER NOW</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Header End -->
+        <!-- About End -->
 
+  <!-- ============================================-->
+      <!-- <section> begin ============================-->
+        <section class="py-0">
 
-    <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
-                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <h3 class="mb-4">UI/UX Designer & Web Developer</h3>
-                    <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum. Amet dolor stet lorem diam dolor justo et dolor dolor dolor</p>
-                    <div class="row mb-3">
-                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Kate Winslet</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">1 April 1990</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Master</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">10 Years</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+012 345 6789</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">info@example.com</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">123 Street, New York, USA</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>
+            <div class="container">
+              <div class="row h-100 gx-2 mt-7">
+                <div class="col-sm-6 col-lg-3 mb-3 mb-md-0 h-100 pb-4">
+                  <div class="card card-span h-100">
+                    <div class="position-relative"> <img class="img-fluid rounded-3 w-100" src="img/coffee1.jpg" alt="..." style="width: 400px; height:400px;"/>
+                      <div class="card-actions">
+                        <div class="badge badge-foodwagon bg-primary p-4">
+                          <div class="d-flex flex-between-center">
+                            <div class="text-white fs-7">15</div>
+                            <div class="d-block text-white fs-2">% <br />
+                              <div class="fw-normal fs-1 mt-2">Off</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <a href="" class="btn btn-outline-primary mr-4">Hire Me</a>
-                    <a href="" class="btn btn-outline-primary">Learn More</a>
+                    <div class="card-body px-0">
+                      <h5 class="fw-bold text-1000 text-truncate">Coffee Cappucinno</h5><span class="badge bg-soft-danger py-2 px-3"><span class="fs-1 text-danger">6 days Remaining</span></span>
+                    </div><a class="stretched-link" href="#"></a>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-3 mb-md-0 h-100 pb-4">
+                  <div class="card card-span h-100">
+                    <div class="position-relative"> <img class="img-fluid rounded-3 w-100" src="img/coffee5.jpg" alt="..." style="width: 400px; height:400px;"/>
+                      <div class="card-actions">
+                        <div class="badge badge-foodwagon bg-primary p-4">
+                          <div class="d-flex flex-between-center">
+                            <div class="text-white fs-7">10</div>
+                            <div class="d-block text-white fs-2">% <br />
+                              <div class="fw-normal fs-1 mt-2">Off</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body px-0">
+                      <h5 class="fw-bold text-1000 text-truncate">Snowy Vanilla</h5><span class="badge bg-soft-danger py-2 px-3"><span class="fs-1 text-danger">6 days Remaining</span></span>
+                    </div><a class="stretched-link" href="#"></a>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-3 mb-md-0 h-100 pb-4">
+                  <div class="card card-span h-100">
+                    <div class="position-relative"> <img class="img-fluid rounded-3 w-100" src="img/donat2.jpg" alt="..." style="width: 400px; height:400px;"/>
+                      <div class="card-actions">
+                        <div class="badge badge-foodwagon bg-primary p-4">
+                          <div class="d-flex flex-between-center">
+                            <div class="text-white fs-7">25</div>
+                            <div class="d-block text-white fs-2">% <br />
+                              <div class="fw-normal fs-1 mt-2">Off</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body px-0">
+                      <h5 class="fw-bold text-1000 text-truncate">Mix Package</h5><span class="badge bg-soft-danger py-2 px-3"><span class="fs-1 text-danger">6 days Remaining</span></span>
+                    </div><a class="stretched-link" href="#"></a>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-3 mb-md-0 h-100 pb-4">
+                  <div class="card card-span h-100">
+                    <div class="position-relative"> <img class="img-fluid rounded-3 w-100" src="img/donat8.jpg" alt="..." style="width: 400px; height:400px;"/>
+                      <div class="card-actions">
+                        <div class="badge badge-foodwagon bg-primary p-4">
+                          <div class="d-flex flex-between-center">
+                            <div class="text-white fs-7">20</div>
+                            <div class="d-block text-white fs-2">% <br />
+                              <div class="fw-normal fs-1 mt-2">Off</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body px-0">
+                      <h5 class="fw-bold text-1000 text-truncate">Family Treats</h5><span class="badge bg-soft-danger py-2 px-3"><span class="fs-1 text-danger">6 days Remaining</span></span>
+                    </div><a class="stretched-link" href="#"></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- end of .container-->
+    
+          </section>
+          <!-- <section> close ============================-->
+          <!-- ============================================-->
+
+        
+        <!-- Menu Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
+                    <h1 class="mb-5">Most Popular Items</h1>
+                </div>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                                <i class="fa fa-coffee fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Popular</small>
+                                    <h6 class="mt-n1 mb-0">Coffee</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                                <i class="fa fa-utensils fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Lovely</small>
+                                    <h6 class="mt-n1 mb-0">Donuts</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/coffee1-br.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Coffee Cappucinno</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Perpaduan exspresso dengan forth milk yang seimbang</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/donat2-br.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Mix Package</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">1/2 donzen donuts + 1/2 donzen d. pops </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/coffee3-br.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Coffee Latte</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Perpaduan exspresso, milk dan forth</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/donat3-br.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Donats</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">1/2 dozen + 1 dozen + 2 dozen</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/coffee5-br.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Snowy Vanilla</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Perpaduan fresh milk dan vanilla flavour, boba lechi</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/donat4-br.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Baby Donuts</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">box of 24</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/coffee7-br.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Ovo Cappucinno</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Perpaduan ovomaltine, milk dan espresso</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/donat8-br.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Family Treats</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">1/2 donzen donuts + d.pops 24</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/donat1.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Donat</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/donat2.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Donat</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/donat3.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Donat</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/donat4.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Donat</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/donat5.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Donat</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/donat6.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Donat</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/donat7.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Donat</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/donat8.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Donat</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- About End -->
+        <!-- Menu End -->
 
-
-    <!-- Qualification Start -->
-    <div class="container-fluid py-5" id="qualification">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h3 class="mb-4">My Education</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Master In CSE</h5>
-                            <p class="mb-2"><strong>Cambridge University</strong> | <small>2000 - 2050</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Master In CSE</h5>
-                            <p class="mb-2"><strong>Cambridge University</strong> | <small>2000 - 2050</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Master In CSE</h5>
-                            <p class="mb-2"><strong>Cambridge University</strong> | <small>2000 - 2050</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
-                        </div>
-                    </div>
+        <section id="testimonial">
+            <div class="container">
+              <div class="row h-100">
+                <div class="col-lg-7 mx-auto text-center mb-6">
+                  <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">Featured Restaurants</h5>
                 </div>
-                <div class="col-lg-6">
-                    <h3 class="mb-4">My Expericence</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Web Designer</h5>
-                            <p class="mb-2"><strong>Soft Company</strong> | <small>2000 - 2050</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+              </div>
+              <div class="row gx-2">
+                <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                  <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="img/donat2-br.jpg" alt="..."/>
+                    <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0">20% off</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span class="fs-0">Fast</span></span></div>
+                    <div class="card-body ps-0">
+                      <div class="d-flex align-items-center mb-3"><img class="img-fluid" src="img/jco1.jpg" alt="" style="width: 64px; height:64px;" />
+                        <div class="flex-1 ms-3">
+                          <h5 class="mb-0 fw-bold text-1000">J.CO</h5><span class="text-primary fs--1 me-1"><i class="fas fa-star"></i></span><span class="mb-0 text-primary">8.9</span>
                         </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Web Designer</h5>
-                            <p class="mb-2"><strong>Soft Company</strong> | <small>2000 - 2050</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Web Designer</h5>
-                            <p class="mb-2"><strong>Soft Company</strong> | <small>2000 - 2050</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
-                        </div>
+                      </div><span class="badge bg-soft-danger p-2"><span class="fw-bold fs-1 text-danger">Opens Tomorrow</span></span>
                     </div>
+                  </div>
                 </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                  <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="img/donat3-br.jpg" alt="..."/>
+                    <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0">10% off</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span class="fs-0">Fast</span></span></div>
+                    <div class="card-body ps-0">
+                      <div class="d-flex align-items-center mb-3"><img class="img-fluid" src="img/dunkindonat9.jpg" alt="" style="width: 64px; height:64px;"/>
+                        <div class="flex-1 ms-3">
+                          <h5 class="mb-0 fw-bold text-1000">Dunkin' Donuts</h5><span class="text-primary fs--1 me-1"><i class="fas fa-star"></i></span><span class="mb-0 text-primary">9.0</span>
+                        </div>
+                      </div><span class="badge bg-soft-danger p-2"><span class="fw-bold fs-1 text-danger">Opens Tomorrow</span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                  <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="img/donat8-br.jpg" alt="..."/>
+                    <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0">15% off</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span class="fs-0">Fast</span></span></div>
+                    <div class="card-body ps-0">
+                      <div class="d-flex align-items-center mb-3"><img class="img-fluid" src="img/donuts-hut-logo.png" alt="" />
+                        <div class="flex-1 ms-3">
+                          <h5 class="mb-0 fw-bold text-1000">Donuts hut</h5><span class="text-primary fs--1 me-1"><i class="fas fa-star"></i></span><span class="mb-0 text-primary">8.7</span>
+                        </div>
+                      </div><span class="badge bg-soft-success p-2"><span class="fw-bold fs-1 text-success">Open Now</span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                  <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="img/donat4-br.jpg" alt="..."/>
+                    <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0">15% off</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span class="fs-0">Fast</span></span></div>
+                    <div class="card-body ps-0">
+                      <div class="d-flex align-items-center mb-3"><img class="img-fluid" src="img/misterdonat2.jpg" alt="" style="width: 64px; height:64px;"/>
+                        <div class="flex-1 ms-3">
+                          <h5 class="mb-0 fw-bold text-1000">Mister Donut</h5><span class="text-primary fs--1 me-1"><i class="fas fa-star"></i></span><span class="mb-0 text-primary">9.0</span>
+                        </div>
+                      </div><span class="badge bg-soft-success p-2"><span class="fw-bold fs-1 text-success">Open Now</span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                  <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="img/donat6-br.jpg" alt="..." />
+                    <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0">10% off</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span class="fs-0">Fast</span></span></div>
+                    <div class="card-body ps-0">
+                      <div class="d-flex align-items-center mb-3"><img class="img-fluid" src="img/dinodonat2.jpg" alt="" style="width: 64px; height:64px;"/>
+                        <div class="flex-1 ms-3">
+                          <h5 class="mb-0 fw-bold text-1000">Dino Donuts</h5><span class="text-primary fs--1 me-1"><i class="fas fa-star"></i></span><span class="mb-0 text-primary">8.5</span>
+                        </div>
+                      </div><span class="badge bg-soft-success p-2"><span class="fw-bold fs-1 text-success">Open Now</span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                  <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="img/donat7-br.jpg" alt="..."/>
+                    <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0">10% off</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span class="fs-0">Fast</span></span></div>
+                    <div class="card-body ps-0">
+                      <div class="d-flex align-items-center mb-3"><img class="img-fluid" src="img/krispykreme2.jpg" alt="" style="width: 64px; height:64px;"/>
+                        <div class="flex-1 ms-3">
+                          <h5 class="mb-0 fw-bold text-1000">Krispy Kreme</h5><span class="text-primary fs--1 me-1"><i class="fas fa-star"></i></span><span class="mb-0 text-primary">8.3</span>
+                        </div>
+                      </div><span class="badge bg-soft-success p-2"><span class="fw-bold fs-1 text-success">Open Now</span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                  <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="img/donat1-br.jpg" alt="..." />
+                    <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0">10% off</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span class="fs-0">Fast</span></span></div>
+                    <div class="card-body ps-0">
+                      <div class="d-flex align-items-center mb-3"><img class="img-fluid" src="img/donatmadu.jpg" alt="" style="width: 64px; height:64px;"/>
+                        <div class="flex-1 ms-3">
+                          <h5 class="mb-0 fw-bold text-1000">Donat Madu</h5><span class="text-primary fs--1 me-1"><i class="fas fa-star"></i></span><span class="mb-0 text-primary">8.0</span>
+                        </div>
+                      </div><span class="badge bg-soft-success p-2"><span class="fw-bold fs-1 text-success">Open Now</span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                  <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="img/donat5-br.jpg" alt="..." />
+                    <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0">10% off</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span class="fs-0">Fast</span></span></div>
+                    <div class="card-body ps-0">
+                      <div class="d-flex align-items-center mb-3"><img class="img-fluid" src="img/doughunt.jpg" alt="" style="width: 64px; height:64px;"/>
+                        <div class="flex-1 ms-3">
+                          <h5 class="mb-0 fw-bold text-1000">Doughunt</h5><span class="text-primary fs--1 me-1"><i class="fas fa-star"></i></span><span class="mb-0 text-primary">8.0</span>
+                        </div>
+                      </div><span class="badge bg-soft-success p-2"><span class="fw-bold fs-1 text-success">Open Now</span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center mt-5"> <a class="btn btn-lg btn-primary" href="#!">View All <i class="fas fa-chevron-right ms-2"> </i></a></div>
+              </div>
             </div>
-        </div>
+          </section>
+
+
+           <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+          <div class="container py-5">
+              <div class="row g-5">
+                  <div class="col-lg-4 col-md-4">
+                      <h4 class="section-title ff-secondary text-start text-light fw-normal mb-4">Company</h4>
+                      <a class="btn btn-link" href="">About Us</a>
+                      <a class="btn btn-link" href="">Diskon</a>
+                      <a class="btn btn-link" href="">Menu</a>
+                      <a class="btn btn-link" href="">Featured Restaurants</a>
+                      <a class="btn btn-link" href="">Order</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4">
+                      <h4 class="section-title ff-secondary text-start text-light fw-normal mb-4">Contact</h4>
+                      <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                      <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                      <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    
+                  </div>
+                  <div class="col-lg-4 col-md-4">
+                      <h4 class="section-title ff-secondary text-start text-light fw-normal mb-4">Opening</h4>
+                      <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                      <p>09AM - 09PM</p>
+                      <h5 class="text-light fw-normal">Sunday</h5>
+                      <p>10AM - 08PM</p>
+                  </div>
+                  
+              </div>
+          </div>
+          <div class="container">
+              <div class="copyright">
+                  <div class="row">
+                      <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                          &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
+            
+            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+            Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br><br>
+                          Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
-    <!-- Qualification End -->
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="container text-center py-5">
-            <div class="d-flex justify-content-center mb-4">
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-            <div class="d-flex justify-content-center mb-3">
-                <a class="text-white" href="#">Privacy</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">Terms</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">FAQs</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">Help</a>
-            </div>
-            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Domain Name</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
-            </p>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-    <!-- Scroll to Bottom -->
-    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

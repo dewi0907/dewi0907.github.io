@@ -1,6 +1,6 @@
-  =>  Template Name    : FreeFolio - Freelancer Portfolio Template
+  =>  Template Name    : Restoran - Bootstrap Restaurant Template
 
-  =>  Template Link    : https://htmlcodex.com/freelancer-portfolio-template
+  =>  Template Link    : https://htmlcodex.com/bootstrap-restaurant-template
 
   =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
 
